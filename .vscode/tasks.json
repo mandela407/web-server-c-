@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build C++ Web Server",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-o",
+        "server.exe",
+        "server.cpp",
+        "-lws2_32"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Compiling C++ server with g++"
+    }
+  ]
+}
